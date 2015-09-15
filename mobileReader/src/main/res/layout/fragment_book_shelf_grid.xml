@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:shelves="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/swipe_container"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:orientation="vertical" >-->
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:shelves="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.onetech.mobilereader.customviews.BookShelfView
+            android:id="@+id/gridview_book"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:numColumns="auto_fit"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="25dp"
+            android:horizontalSpacing="5dp"
+            shelves:shelfBackground="@drawable/grid_item_background_center">
+        </com.onetech.mobilereader.customviews.BookShelfView>
+    </RelativeLayout>
+
+<!--</android.support.v4.widget.SwipeRefreshLayout>-->

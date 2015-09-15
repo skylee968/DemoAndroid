@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mbr_loading_and_not_found_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="false"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/mbr_txt_not_found_message"
+        style="@style/MbrTxtStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mbr_btn_retry"
+        android:layout_gravity="center"
+        android:gravity="center_horizontal"
+        android:text="@string/common_txt_not_found" />
+
+    <Button
+        android:id="@+id/mbr_btn_retry"
+        style="@style/MbrTxtButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/button_main_positive"
+        android:text="@string/common_txt_reload_data" />
+
+</RelativeLayout>

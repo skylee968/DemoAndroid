@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/mainMenuItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_listview_item"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/iconMenuDrawer"
+            android:layout_width="@dimen/menu_item_img_size_width"
+            android:layout_height="@dimen/menu_item_img_size_height"
+            android:layout_marginBottom="@dimen/common_padding_normal"
+            android:layout_marginLeft="@dimen/common_padding_normal"
+            android:layout_marginRight="@dimen/common_padding_normal"
+            android:layout_marginTop="@dimen/common_padding_normal"
+            android:background="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/menuSiteName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_marginTop="3dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:text="menu"
+            android:textColor="@color/gray"
+            style="@style/TxtBigStyle" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/gray" >
+    </View>
+
+</LinearLayout>

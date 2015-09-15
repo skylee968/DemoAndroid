@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dialog_title">#0088F6</color>
+    
+    <color name="core_text_hidden">#CCCCCC</color>
+    <color name="core_yellow">#FECB0A</color>
+    <color name="core_green">#548B19</color>
+    <color name="core_green_bright">#7ED026</color>
+</resources>

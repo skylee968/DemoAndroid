@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/favorite_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/common_size_normal"
+            android:layout_height="@dimen/common_size_normal"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_title_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_txt_size_small" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/read_btn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/common_size_normal"
+            android:layout_height="@dimen/common_size_normal"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/txt_read_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/black"
+            android:textSize="@dimen/common_txt_size_small" />
+    </LinearLayout>
+
+</LinearLayout>

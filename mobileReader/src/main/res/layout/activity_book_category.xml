@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <com.astuetz.PagerSlidingTabStrip
+        android:id="@+id/category_page_silding_tab_strip"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/page_sliding_tab_strip_height"/>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager_book_by_cateogry"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+</LinearLayout>

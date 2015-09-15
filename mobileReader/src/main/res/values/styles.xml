@@ -1,0 +1,58 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+    </style>
+    <style name="AppBaseThemeReader" parent="android:Theme.Holo">
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppThemeReader" parent="AppBaseThemeReader">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="TextViewItemBookRowStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="MbrTxtStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+    </style>
+    <style name="MbrTxtButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+    </style>
+
+    <style name="TxtBaseStyle">
+    </style>
+    <style name="TxtHugeStyle" parent="TxtBaseStyle">
+        <item name="android:textSize">@dimen/common_txt_size_huge</item>
+    </style>
+    <style name="TxtBigStyle" parent="TxtBaseStyle">
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+    </style>
+    <style name="TxtNormalStyle" parent="TxtBaseStyle">
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+    </style>
+    <style name="TxtSmallStyle" parent="TxtBaseStyle">
+        <item name="android:textSize">@dimen/common_txt_size_small</item>
+    </style>
+    <style name="MainTextStyle" parent="TxtBaseStyle">
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+    </style>
+    <style name="DialogFullScreen" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+</resources>

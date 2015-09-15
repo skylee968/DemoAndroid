@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/DemoAndroid.iml" filepath="$PROJECT_DIR$/DemoAndroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/colorPicker/colorPicker.iml" filepath="$PROJECT_DIR$/colorPicker/colorPicker.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mobileReader/mobileReader.iml" filepath="$PROJECT_DIR$/mobileReader/mobileReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oTCore/oTCore.iml" filepath="$PROJECT_DIR$/oTCore/oTCore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/processButton/processButton.iml" filepath="$PROJECT_DIR$/processButton/processButton.iml" />
+    </modules>
+  </component>
+</project>

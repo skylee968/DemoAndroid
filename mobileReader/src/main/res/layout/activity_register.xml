@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:progressanim="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <fragment
+        android:id="@+id/register_fragment"
+        class="com.onetech.mobilereader.fragments.RegisterFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        tools:layout="@layout/fragment_register" />
+
+
+    <TextView
+        android:id="@+id/errorStartUpMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:padding="@dimen/common_padding_normal"
+        android:text="@string/app_name"
+        android:textColor="@color/main_color"
+        android:textSize="15sp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="main_color">#E84940</color>
+    <color name="gray">#D4D4D4</color>
+
+
+    <color name="bright_main_color">#f0ab62</color>
+    <color name="dark_main_color">#e55839</color>
+    <color name="line_list_view">@color/main_color</color>
+
+    <color name="dark_gray">#303030</color>
+    <color name="bright_gray">#F1F1F1</color>
+    <color name="dark_gray_transparent">#80303030</color>
+
+    <color name="green">#ff99cc00</color>
+    <color name="green_brightness">#ffB2EB07</color>
+
+    <color name="orange">#FF6600</color>
+    <color name="pink">#D2007D</color>
+    <color name="violet">#FF5161BC</color>
+</resources>

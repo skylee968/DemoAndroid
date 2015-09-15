@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ShelvesView">
+        <attr name="shelfBackground" format="reference" />
+    </declare-styleable>
+    <string-array name="navigation_menu">
+        <item>Home</item>
+        <item>Store</item>
+        <item>MyBook</item>
+        <item>Setting</item>
+        <item>Rating</item>
+        <item>Guide</item>
+        <item>About us</item>
+    </string-array>
+</resources>

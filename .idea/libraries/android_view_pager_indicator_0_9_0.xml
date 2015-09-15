@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="android-view-pager-indicator-0.9.0">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/mobileReader/build/intermediates/exploded-aar/org.quanqi/android-view-pager-indicator/0.9.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/mobileReader/build/intermediates/exploded-aar/org.quanqi/android-view-pager-indicator/0.9.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

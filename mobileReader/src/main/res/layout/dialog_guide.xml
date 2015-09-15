@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <WebView
+        android:id="@+id/guide_web_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="99dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/common_padding_normal"
+        android:layout_marginTop="@dimen/common_padding_normal"
+        android:background="@drawable/button_main_positive"
+        android:text="@string/common_txt_btn_close"
+        android:textColor="@color/white" />
+</LinearLayout>

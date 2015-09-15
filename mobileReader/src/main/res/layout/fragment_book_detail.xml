@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/book_detail_container"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/common_padding_normal">
+
+        <ImageView
+            android:id="@+id/img_cover_detail"
+            android:layout_width="120dp"
+            android:layout_height="165dp"
+            android:layout_gravity="center"
+            android:background="@color/core_green"
+            android:scaleType="fitXY" />
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="165dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="@dimen/common_padding_normal"
+            android:layout_toRightOf="@+id/img_cover_detail"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/title_book_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="5dip"
+                android:maxLines="3"
+                android:text="book name"
+                android:textColor="@android:color/black"
+                android:textSize="25sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/title_book_detail"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_author_book_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="11dip"
+                    android:text="Author:"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/txt_author_book_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:minLines="2"
+                    android:paddingLeft="3dp"
+                    android:text="Victor Hugo"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="5dp">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/btn_like"
+                            android:layout_width="20dp"
+                            android:layout_height="17dp"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/common_padding_smallest"
+                            android:background="@drawable/ic_favorite_active"
+                            android:gravity="center"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/txt_total_like"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text=" 10k" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.dd.processbutton.iml.SubmitProcessButton
+                    android:id="@+id/btn_download"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/background_button_blue"
+                    android:text="@string/common_txt_download"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    custom:pb_textComplete="@string/common_txt_read"
+                    custom:pb_textProgress="@string/common_txt_downloading"
+                    custom:pb_colorComplete="@color/green_complete"/>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:layout_marginTop="@dimen/common_padding_normal"
+        android:background="@color/core_green" />
+
+    <ScrollView
+        android:id="@+id/book_description_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/common_padding_normal"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/txt_book_description"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/common_padding_normal"
+            android:text="@string/app_name" />
+    </ScrollView>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/common_padding_normal"
+        android:background="@color/core_green" />
+    <include
+        layout="@layout/layout_book_detail_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

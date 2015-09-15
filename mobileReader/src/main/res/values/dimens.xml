@@ -1,0 +1,60 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- common -->
+    <dimen name="common_padding_smallest">2dp</dimen>
+    <dimen name="common_padding_small">5dp</dimen>
+    <dimen name="common_padding_normal">7dp</dimen>
+    <dimen name="common_padding_large">11dp</dimen>
+    <dimen name="common_padding_big">15dp</dimen>
+    <!-- end common -->
+    <!--
+         Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html
+    -->
+    <dimen name="navigation_drawer_width">240dp</dimen>
+    
+    <!-- Item book row -->
+    <dimen name="item_book_row_width">110dp</dimen>
+    <dimen name="item_book_row_height">140dp</dimen>
+    
+    <dimen name="item_book_img_width">100dp</dimen>
+    <dimen name="item_book_img_height">130dp</dimen>
+    <!-- End item book row -->
+    
+    <!-- textsize -->
+    <dimen name="common_txt_size_small">12sp</dimen>
+    <dimen name="common_txt_size_normal">17sp</dimen>
+    <dimen name="common_txt_size_big">20sp</dimen>
+    <dimen name="common_txt_size_huge">32sp</dimen>
+
+    <!-- common size -->
+    <dimen name="common_size_smallest">10dp</dimen>
+    <dimen name="common_size_small">15dp</dimen>
+    <dimen name="common_size_normal">20dp</dimen>
+    <dimen name="common_size_large">25dp</dimen>
+    <dimen name="common_size_big">35dp</dimen>
+    <!-- image size -->
+    <dimen name="category_size_width">140dp</dimen>
+    <dimen name="category_size_height">140dp</dimen>
+
+    <dimen name="category_size_width_list_view">77dp</dimen>
+    <dimen name="category_size_height_list_view">77dp</dimen>
+
+    <!-- menu item-->
+    <dimen name="menu_item_img_size_width">25dp</dimen>
+    <dimen name="menu_item_img_size_height">25dp</dimen>
+    <!-- user info-->
+    <dimen name="user_img_size_width">77dp</dimen>
+    <dimen name="user_img_size_height">77dp</dimen>
+
+    <dimen name="user_info_layout_size_height">77dp</dimen>
+
+    <dimen name="page_sliding_tab_strip_height">48dp</dimen>
+
+    <dimen name="book_detail_bottom_icon_size">35dp</dimen>
+
+    <dimen name="action_bar_size_height">55dp</dimen>
+    <dimen name="action_bar_size_search_btn">40dp</dimen>
+</resources>

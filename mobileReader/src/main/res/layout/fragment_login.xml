@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/login_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="@dimen/common_padding_big">
+
+        <TextView
+            style="@style/TxtNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_txt_username" />
+
+        <EditText
+            android:id="@+id/username_login_edt"
+            style="@style/TxtNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/common_txt_username_hint"
+            android:singleLine="true" />
+
+        <TextView
+            style="@style/TxtNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/common_txt_user_email"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/email_login_edt"
+            style="@style/TxtNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/common_txt_user_email_hint"
+            android:singleLine="true"
+            android:visibility="gone"/>
+
+        <TextView
+            style="@style/TxtNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_big"
+            android:text="@string/common_txt_password" />
+
+        <EditText
+            android:id="@+id/password_login_edt"
+            style="@style/TxtNormalStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/common_txt_password_hint"
+            android:singleLine="true"
+            android:inputType="textPassword"/>
+
+        <Button
+            android:id="@+id/login_btn"
+            style="@style/TxtNormalStyle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:text="@string/common_txt_login" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_container"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="@dimen/common_padding_big"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/register_now_btn"
+            style="@style/TxtNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/common_txt_register_now"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/forgot_password_btn"
+            style="@style/TxtNormalStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:text="@string/common_txt_forgot_password"
+            android:textStyle="italic" />
+    </LinearLayout>
+
+
+</RelativeLayout>

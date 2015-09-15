@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- common -->
+    <string name="common_txt_download">Download</string>
+    <string name="common_txt_like_btn">Like</string>
+    <string name="common_txt_read">Read</string>
+    <string name="common_txt_downloading">Downloading..</string>
+    <string name="common_txt_waiting_loading">Please wait...</string>
+    <string name="common_txt_not_found">Not found :(</string>
+    <string name="common_txt_reload_data">Reload</string>
+    <!-- end common -->
+    <string name="app_name">MobileReader</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_example">Example action</string>
+    <string name="action_settings">Settings</string>
+    
+    <!-- directory -->
+    <string name="directory_btn_label_open_directory">Open Directory</string>
+    <string name="directory_folder_label">file name</string>
+    <!-- end directory -->
+
+    <!-- tabs home view-->
+    <string name="home_tab_txt_categroy">Category</string>
+    <string name="home_tab_txt_home">Home</string>
+    <string name="home_tab_txt_suggest_book">Suggest books</string>
+    <string name="home_tab_txt_new_book">New books</string>
+    <!-- end tabs home view-->
+
+    <!-- tabs category book-->
+    <string name="category_tab_txt_all_book">All books</string>
+    <string name="category_tab_txt_suggest_book">Suggest books</string>
+    <!-- end tabs category book-->
+
+    <!-- tabs category book-->
+    <string name="user_book_tab_txt_my_book">All books</string>
+    <string name="user_book_tab_txt_favorite_book">Favorite books</string>
+    <!-- end tabs category book-->
+
+    <string name="dialog_txt_new_version_update">Update new version?</string>
+    <string name="dialog_txt_update_title">New version</string>
+    <string name="dialog_txt_exit_title">Exit?</string>
+    <string name="dialog_exit_app_message">Do you want to exit？</string>
+
+    <string name="dialog_txt_about_us_title">About us</string>
+
+    <string name="common_txt_login">Login</string>
+    <string name="common_txt_register">Register</string>
+    <string name="common_txt_username">User name</string>
+    <string name="common_txt_username_hint">username</string>
+    <string name="common_txt_password">Passwords</string>
+    <string name="common_txt_password_hint">Your passwords</string>
+    <string name="common_txt_forgot_password">Forgot passwords?</string>
+    <string name="common_txt_register_now">Register now</string>
+    <string name="common_txt_confirm_password">Confirm passwords</string>
+    <string name="common_txt_confirm_password_hint">Confirm your passwords</string>
+    <string name="common_txt_user_email">Email</string>
+    <string name="common_txt_user_email_hint">Your email</string>
+
+    <string name="common_txt_btn_rating">Rating</string>
+    <string name="common_txt_rating">Rating</string>
+    <string name="common_txt_server_error_default">Server is under maintenance, please come back later!!!</string>
+    <string name="common_txt_btn_login">Login</string>
+    <string name="common_txt_btn_retry">Retry</string>
+    <string name="common_txt_btn_next">Next</string>
+    <string name="common_txt_btn_back">Back</string>
+    <string name="common_txt_btn_ok">Ok</string>
+    <string name="common_txt_btn_close">Close</string>
+    <string name="common_txt_btn_cancel">Cancel</string>
+    <string name="common_txt_version_name">Version</string>
+    <string name="common_txt_expire_date">Expire date:</string>
+    <string name="common_txt_question">\?</string>
+    <string name="common_txt_money_uint">VND</string>
+    <string name="common_txt_search_book_center">Search book center...</string>
+
+    <string name="common_msg_invalid_username">user name invalid</string>
+    <string name="common_msg_invalid_email">email invalid</string>
+    <string name="common_msg_invalid_passowd">passwod invalid</string>
+    <string name="common_msg_confirm_passowd_not_match">Confirm password not match..</string>
+    <string name="common_msg_please_login">Please, login...</string>
+    <string name="common_search_hint"><i>Book name or author...</i></string>
+
+
+    <string name="unknown_person">Unknown</string>
+    <string name="play_services_error">Google Play services is not available.  This application will close.</string>
+    <string name="close">Close</string>
+    <string name="profile_picture">User\'s profile picture.</string>
+    <string name="mock_server_has_token">Mock server has refresh token?</string>
+    <string name="request_server_auth_code">Request server auth code?</string>
+    <string name="configuration_error">Error: the value of WEB_CLIENT_ID or SERVER_BASE_URL is not  set correctly. This will cause errors when requesting a server auth code.</string>
+
+</resources>
