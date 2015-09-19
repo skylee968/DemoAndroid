@@ -40,7 +40,7 @@
         <item name="android:textSize">@dimen/common_txt_size_huge</item>
     </style>
     <style name="TxtBigStyle" parent="TxtBaseStyle">
-        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+        <item name="android:textSize">@dimen/common_txt_size_big</item>
     </style>
     <style name="TxtNormalStyle" parent="TxtBaseStyle">
         <item name="android:textSize">@dimen/common_txt_size_normal</item>
@@ -54,5 +54,12 @@
     <style name="DialogFullScreen" parent="@android:style/Theme.Dialog">
         <item name="android:windowBackground">@android:color/transparent</item>
         <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="MainContentStyle">
+        <item name="android:padding">15dp</item>
+    </style>
+    <style name="BtnNormalStyle" parent="TxtNormalStyle">
+        <item name="android:background">@drawable/background_button_green</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

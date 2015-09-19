@@ -4,12 +4,12 @@
         <attr name="shelfBackground" format="reference" />
     </declare-styleable>
     <string-array name="navigation_menu">
-        <item>Home</item>
-        <item>Store</item>
-        <item>MyBook</item>
-        <item>Setting</item>
-        <item>Rating</item>
-        <item>Guide</item>
-        <item>About us</item>
+        <item>@string/menu_navi_txt_home</item>
+        <item>@string/menu_navi_txt_store</item>
+        <item>@string/menu_navi_txt_my_book</item>
+        <item>@string/menu_navi_txt_setting</item>
+        <item>@string/menu_navi_txt_rating</item>
+        <item>@string/menu_navi_txt_guide</item>
+        <item>@string/menu_navi_txt_about_us</item>
     </string-array>
 </resources>

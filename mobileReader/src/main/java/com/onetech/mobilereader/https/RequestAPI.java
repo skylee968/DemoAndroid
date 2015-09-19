@@ -1,5 +1,6 @@
 package com.onetech.mobilereader.https;
 
+import com.onetech.mobilereader.configs.Constants;
 import com.onetech.mobilereader.entityresult.BookLikedResultEntity;
 import com.onetech.mobilereader.entityresult.BookResultEntity;
 import com.onetech.mobilereader.entityresult.CategoryResultEntity;
@@ -29,23 +30,23 @@ import retrofit.http.Query;
  * Created by thienlm on 7/5/2015.
  */
 public interface RequestAPI {
-    @GET("/")
-    void getBooks(@Query("id") String id, @Query("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/{page}/{pageNum}")
+    void getBooks(@Query("id") String id, @Query("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
-    @GET("/suggestbook")
-    void getSuggestBooks(@Query("id") String id, @Query("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/suggestbook/{page}/{pageNum}")
+    void getSuggestBooks(@Query("id") String id, @Query("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
-    @GET("/suggestbook")
-    void getRelativeBooks(@Query("id") String id, @Query("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/suggestbook/{page}/{pageNum}")
+    void getRelativeBooks(@Query("id") String id, @Query("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
-    @GET("/newbook")
-    void getNewBooks(@Query("id") String id, @Query("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/newbook/{page}/{pageNum}")
+    void getNewBooks(@Query("id") String id, @Query("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
-    @GET("/bookbycategory/{cateId}")
-    void getAllBookCategory(@Path("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/bookbycategory/{cateId}/{page}/{pageNum}")
+    void getAllBookCategory(@Path("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
-    @GET("/bookbycategory/{cateId}")
-    void getSuggestBookCategory(@Path("cateId") String cateId, @Query("page") String page, Callback<BookResultEntity> callback);
+    @GET("/bookbycategory/{cateId}/{page}/{pageNum}")
+    void getSuggestBookCategory(@Path("cateId") String cateId, @Path("page") String page, @Path("pageNum") String pageNum, Callback<BookResultEntity> callback);
 
     @GET("/category")
     void getCategory(Callback<CategoryResultEntity> callback);

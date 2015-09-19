@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
+    <string name="menu_navi_txt_home">Trang chủ</string>
+    <string name="menu_navi_txt_store">Kho sách</string>
+    <string name="menu_navi_txt_my_book">Sách của tôi</string>
+    <string name="menu_navi_txt_setting">Cài đặt</string>
+    <string name="menu_navi_txt_rating">Xếp hạng</string>
+    <string name="menu_navi_txt_guide">Hướng dẫn</string>
+    <string name="menu_navi_txt_about_us">Giới thiệu</string>
     <!-- common -->
     <string name="common_txt_download">Download</string>
     <string name="common_txt_like_btn">Like</string>
@@ -46,32 +52,37 @@
     <string name="dialog_txt_exit_title">Exit?</string>
     <string name="dialog_exit_app_message">Do you want to exit？</string>
 
-    <string name="dialog_txt_about_us_title">About us</string>
+    <string name="dialog_txt_about_us_title">Giới thiệu</string>
+    <string name="dialog_txt_about_us_content">Ứng dụng Mobile Reader được phát triển bởi nhóm Orange Studio
+    \nCảm ơn bạn đã sử dụng ứng dụng.
+    \n\n\n@Copy right 2014-2015</string>
+    <string name="dialog_txt_rating_title">Xếp hạng ứng dụng</string>
+    <string name="dialog_txt_rating_content">Hãy khích lệ chúng tôi bằng cách vote 5(*) để chúng tôi tiếp tục mang đến cho các bạn những trải nghiệm tuyệt vời nhất.\n\nChân thành cảm ơn.</string>
 
-    <string name="common_txt_login">Login</string>
-    <string name="common_txt_register">Register</string>
-    <string name="common_txt_username">User name</string>
-    <string name="common_txt_username_hint">username</string>
-    <string name="common_txt_password">Passwords</string>
-    <string name="common_txt_password_hint">Your passwords</string>
-    <string name="common_txt_forgot_password">Forgot passwords?</string>
-    <string name="common_txt_register_now">Register now</string>
-    <string name="common_txt_confirm_password">Confirm passwords</string>
-    <string name="common_txt_confirm_password_hint">Confirm your passwords</string>
+    <string name="common_txt_login">Đăng nhập</string>
+    <string name="common_txt_register">Đăng ký</string>
+    <string name="common_txt_username">Tên đăng nhập</string>
+    <string name="common_txt_username_hint">Nhập tên đăng nhập</string>
+    <string name="common_txt_password">Mật khẩu</string>
+    <string name="common_txt_password_hint">Nhập mật khẩu</string>
+    <string name="common_txt_forgot_password">Quên mật khẩu?</string>
+    <string name="common_txt_register_now">Đăng ký ngay</string>
+    <string name="common_txt_confirm_password">Xác nhận mật khẩu</string>
+    <string name="common_txt_confirm_password_hint">Nhập lại xác nhận mật khẩu</string>
     <string name="common_txt_user_email">Email</string>
-    <string name="common_txt_user_email_hint">Your email</string>
+    <string name="common_txt_user_email_hint">Nhập địa chỉ email của bạn</string>
 
-    <string name="common_txt_btn_rating">Rating</string>
-    <string name="common_txt_rating">Rating</string>
+    <string name="common_txt_btn_rating">Xếp hạng</string>
+    <string name="common_txt_rating">Xếp hạng ứng dụng</string>
     <string name="common_txt_server_error_default">Server is under maintenance, please come back later!!!</string>
-    <string name="common_txt_btn_login">Login</string>
-    <string name="common_txt_btn_retry">Retry</string>
-    <string name="common_txt_btn_next">Next</string>
-    <string name="common_txt_btn_back">Back</string>
+    <string name="common_txt_btn_login">Đăng nhập</string>
+    <string name="common_txt_btn_retry">Thử lại</string>
+    <string name="common_txt_btn_next">Tiếp</string>
+    <string name="common_txt_btn_back">Quay lại</string>
     <string name="common_txt_btn_ok">Ok</string>
-    <string name="common_txt_btn_close">Close</string>
-    <string name="common_txt_btn_cancel">Cancel</string>
-    <string name="common_txt_version_name">Version</string>
+    <string name="common_txt_btn_close">Đóng</string>
+    <string name="common_txt_btn_cancel">Hủy</string>
+    <string name="common_txt_version_name">Phiên bản</string>
     <string name="common_txt_expire_date">Expire date:</string>
     <string name="common_txt_question">\?</string>
     <string name="common_txt_money_uint">VND</string>

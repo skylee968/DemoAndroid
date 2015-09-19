@@ -11,4 +11,6 @@ import java.util.List;
 public class Constants {
     public static UserEntity mUserInfo;
     public static List<BookLikedEntity> mUserBookLiked;
+
+    public static int PAGE_NUM              = 20;
 }

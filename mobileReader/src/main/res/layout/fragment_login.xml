@@ -59,8 +59,8 @@
 
         <Button
             android:id="@+id/login_btn"
-            style="@style/TxtNormalStyle"
-            android:layout_width="100dp"
+            style="@style/BtnNormalStyle"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
             android:text="@string/common_txt_login" />

@@ -97,7 +97,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getBooksAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getBooks(request.id, request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getBooks(request.id, request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);
@@ -110,7 +110,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getNewBooksAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getNewBooks(request.id, request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getNewBooks(request.id, request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);
@@ -123,7 +123,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getRelativeBooksAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getRelativeBooks(request.id, request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getRelativeBooks(request.id, request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);
@@ -136,7 +136,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getSuggestBooksAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getSuggestBooks(request.id, request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getSuggestBooks(request.id, request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);
@@ -149,7 +149,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getSuggestBooksCategoryAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getSuggestBookCategory(request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getSuggestBookCategory(request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);
@@ -162,7 +162,7 @@ public class BookModel extends BaseModel implements BookIF {
 		});
 	}
 	private void getAllBooksCategoryAsync(RequestEntity request, final Callback<BookResultEntity> callback) {
-		RestClient.get().getAllBookCategory(request.cateId, String.valueOf(request.pageIndex), new Callback<BookResultEntity>() {
+		RestClient.get().getAllBookCategory(request.cateId, String.valueOf(request.pageIndex), request.pageNum, new Callback<BookResultEntity>() {
 			@Override
 			public void success(BookResultEntity bookResultEntity, Response response) {
 				callback.success(bookResultEntity, response);

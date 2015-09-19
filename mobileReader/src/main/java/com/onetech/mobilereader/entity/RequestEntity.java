@@ -1,6 +1,7 @@
 package com.onetech.mobilereader.entity;
 
 import com.onetech.mobilereader.OTApplicationContext;
+import com.onetech.mobilereader.configs.Constants;
 import com.onetech.mobilereader.objects.DeviceInfo;
 import com.onetech.mobilereader.uitls.DeviceUtils;
 
@@ -10,6 +11,7 @@ public class RequestEntity extends BaseEntity {
 	public String type;
 	public String url;
 	public int pageIndex;
+	public String pageNum;
 	public boolean isRefresh;
 	public String userId;
 
@@ -27,6 +29,7 @@ public class RequestEntity extends BaseEntity {
 		isRefresh 	= false;
 		type 		= "";
 		pageIndex	= 1;
+		pageNum		= String.valueOf(Constants.PAGE_NUM);
 		requestType	= REQUEST_TYPE.BOOKS;
 		imeiNumber	= DeviceUtils.getDeviceId(OTApplicationContext.getContext());
 	}

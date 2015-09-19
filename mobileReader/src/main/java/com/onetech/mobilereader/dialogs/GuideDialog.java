@@ -22,7 +22,7 @@ public class GuideDialog extends BaseDialog {
 	private void initView() {
 		mWebView  = (WebView) findViewById(R.id.guide_web_view);
 		mBtnClose = (Button) findViewById(R.id.btn_close);
-		mWebView.loadUrl("http://vnexpress.net/tin-tuc/khoa-hoc/ky-thuat-moi/nha-gian-dk1-co-may-bien-nuoc-bien-thanh-nuoc-ngot-3247320.html");
+		mWebView.loadUrl("http://google.com");
 	}
 	private void initListener() {
 		mBtnClose.setOnClickListener(this);
