@@ -27,7 +27,7 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener{
     private EditText mEdtUsername;
     private EditText mEdtEmail;
     private EditText mEdtPassword;
-    private Button mBtnLogin;
+    private TextView mBtnLogin;
     private TextView mTxtRegisterNow;
     private TextView mTxtForgotPassword;
     private RequestEntity mRequestEntity;
@@ -57,7 +57,7 @@ public class LoginFragment extends BaseFragment implements View.OnClickListener{
         mEdtUsername            = (EditText) mView.findViewById(R.id.username_login_edt);
         mEdtEmail               = (EditText) mView.findViewById(R.id.email_login_edt);
         mEdtPassword            = (EditText) mView.findViewById(R.id.password_login_edt);
-        mBtnLogin               = (Button)   mView.findViewById(R.id.login_btn);
+        mBtnLogin               = (TextView)   mView.findViewById(R.id.login_btn);
         mTxtRegisterNow         = (TextView) mView.findViewById(R.id.register_now_btn);
         mTxtForgotPassword      = (TextView) mView.findViewById(R.id.forgot_password_btn);
     }

@@ -4,17 +4,14 @@
         Base application theme, dependent on API level. This theme is replaced
         by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
     -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
+
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar.Fullscreen">
     </style>
 
     <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-    </style>
-    <style name="AppBaseThemeReader" parent="android:Theme.Holo">
-    </style>
-
-    <!-- Application theme. -->
-    <style name="AppThemeReader" parent="AppBaseThemeReader">
+    <style name="AppThemeReader" parent="AppTheme">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -47,6 +44,10 @@
     </style>
     <style name="TxtSmallStyle" parent="TxtBaseStyle">
         <item name="android:textSize">@dimen/common_txt_size_small</item>
+    </style>
+    <style name="TxtTitleActionBarStyle">
+        <item name="android:textSize">27sp</item>
+        <item name="android:textColor">@color/white</item>
     </style>
     <style name="MainTextStyle" parent="TxtBaseStyle">
         <item name="android:textSize">@dimen/common_txt_size_normal</item>

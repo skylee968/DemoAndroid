@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.onetech.mobilereader.R;
 import com.onetech.mobilereader.entity.RequestEntity;
@@ -30,7 +31,7 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
     private EditText mEdtEmail;
     private EditText mEdtPassword;
     private EditText mEdtConfirmPasswod;
-    private Button   mBtnRegister;
+    private TextView mBtnRegister;
 
 //    private TextView mTxtBack;
     private RequestEntity mRequest;
@@ -58,7 +59,7 @@ public class RegisterFragment extends BaseFragment implements View.OnClickListen
         mEdtEmail           = (EditText) mView.findViewById(R.id.email_register_edt);
         mEdtPassword        = (EditText) mView.findViewById(R.id.password_register_edt);
         mEdtConfirmPasswod  = (EditText) mView.findViewById(R.id.confirm_password_register_edt);
-        mBtnRegister        = (Button) mView.findViewById(R.id.register_btn);
+        mBtnRegister        = (TextView) mView.findViewById(R.id.register_btn);
 //        mTxtBack            = (TextView) mView.findViewById(R.id.back_btn);
     }
     private void initListener(){
