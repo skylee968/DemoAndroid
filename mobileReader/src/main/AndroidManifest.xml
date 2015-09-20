@@ -15,17 +15,15 @@
         android:resizeable="true"
         android:smallScreens="true"
         android:xlargeScreens="true" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <!-- uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE"/ -->
     <uses-permission android:name="android.permission.INTERNET" />
-    <!-- Stop TTS on incoming call -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
-    <!-- Hide Android3 soft buttons on Archos -->
-    <!-- uses-permission android:name="archos.permission.FULLSCREEN.FULL"/ -->
-    <!-- Required permission to use in-app billing. -->
+
     <uses-permission android:name="com.android.vending.BILLING" />
 
     <application
@@ -58,6 +56,24 @@
             android:theme="@style/AppThemeReader"
             android:windowSoftInputMode="stateHidden"></activity>
 
+        <!-- social-->
+        <activity android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:label="@string/app_name" />
+
+        <provider android:authorities="com.facebook.app.FacebookContentProvider501901813305584"
+            android:name="com.facebook.FacebookContentProvider"
+            android:exported="true"/>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id"/>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version"/>
+        <!-- end social-->
 
         <!--<activity-->
         <!--android:name="org.badreader.BadReader"-->

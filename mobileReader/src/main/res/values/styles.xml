@@ -62,5 +62,19 @@
     <style name="BtnNormalStyle" parent="TxtNormalStyle">
         <item name="android:background">@drawable/background_button_green</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/common_txt_size_normal</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="BtnRedSocialStyle" parent="BtnNormalStyle">
+        <item name="android:background">@drawable/background_button_red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="BtnBlueSocialStyle" parent="BtnNormalStyle">
+        <item name="android:background">@drawable/background_button_blue</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+    <style name="BtnGraySocialStyle" parent="BtnNormalStyle">
+        <item name="android:background">@drawable/background_button_gray</item>
+        <item name="android:textColor">@color/white</item>
     </style>
 </resources>

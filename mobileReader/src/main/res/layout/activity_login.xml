@@ -1,18 +1,54 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:progressanim="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/white">
+    android:layout_height="match_parent">
 
-    <fragment
-        android:id="@+id/login_fragment"
-        class="com.onetech.mobilereader.fragments.LoginFragment"
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_centerInParent="true"
-        android:visibility="visible"
-        tools:layout="@layout/fragment_login" />
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TxtTitleActionBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="30dp"
+            android:text="@string/common_txt_login"
+            android:textColor="@color/main_color"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_login_google"
+            style="@style/BtnRedSocialStyle"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:text="@string/login_social_google"
+            android:textSize="@dimen/common_txt_size_big"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_login_facebook"
+            style="@style/BtnBlueSocialStyle"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/login_social_facebook"
+            android:textSize="@dimen/common_txt_size_big"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/btn_login_close"
+            style="@style/BtnGraySocialStyle"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/common_txt_btn_close"
+            android:textSize="@dimen/common_txt_size_big"
+            android:textStyle="bold" />
+    </LinearLayout>
 
 </RelativeLayout>

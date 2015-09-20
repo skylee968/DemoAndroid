@@ -45,7 +45,7 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 			@Override
 			public void onChooseDirectory(String dir) {
 //				//Toast.makeText(getApplicationContext(), dir, Toast.LENGTH_LONG).show();
-//				Intent intent=new Intent(HomeActivity.this,ReaderActivity.class);
+//				Intent intent=new Intent(HomeDemoActivity.this,ReaderActivity.class);
 //				intent.putExtra(BUNDLE_KEY.EBOOK_FILE, dir);
 //				startActivity(intent);
 			}

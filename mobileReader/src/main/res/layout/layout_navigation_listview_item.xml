@@ -31,7 +31,7 @@
             android:gravity="left"
             android:singleLine="true"
             android:text="menu"
-            android:textColor="@color/gray"
+            android:textColor="@color/bright_gray"
             style="@style/TxtBigStyle" />
     </LinearLayout>
 
@@ -40,7 +40,7 @@
         android:layout_height="0.5dp"
         android:layout_marginLeft="3dp"
         android:layout_marginRight="3dp"
-        android:background="@color/gray" >
+        android:background="@color/bright_gray" >
     </View>
 
 </LinearLayout>

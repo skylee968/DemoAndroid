@@ -47,6 +47,11 @@
     <string name="user_book_tab_txt_favorite_book">Favorite books</string>
     <!-- end tabs category book-->
 
+    <!-- login fragment-->
+    <string name="login_social_google">Google</string>
+    <string name="login_social_facebook">Facebook</string>
+
+    <!-- end login fragment-->
     <string name="dialog_txt_new_version_update">Update new version?</string>
     <string name="dialog_txt_update_title">New version</string>
     <string name="dialog_txt_exit_title">Exit?</string>

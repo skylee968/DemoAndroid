@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/colorPicker" />
+            <option value="$PROJECT_DIR$/login_social_lib" />
             <option value="$PROJECT_DIR$/mobileReader" />
             <option value="$PROJECT_DIR$/oTCore" />
             <option value="$PROJECT_DIR$/processButton" />
