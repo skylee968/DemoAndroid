@@ -22,6 +22,7 @@ import studio.orange.mobile.reader.entityresult.RegisterResultEntity;
 import studio.orange.mobile.reader.entityresult.ServerConfigResultEntity;
 import studio.orange.mobile.reader.fragments.RegisterFragment;
 import studio.orange.mobile.reader.models.CommonModel;
+import studio.orange.mobile.reader.models.UserModel;
 import studio.orange.mobile.reader.notifications.GCMClientManager;
 import studio.orange.mobile.reader.uitls.CommonUtils;
 
@@ -161,7 +162,7 @@ public class RegisterActivity extends BaseActivity implements GoogleApiClient.Co
             public void success(ServerConfigResultEntity serverConfigResultEntity, Response response) {
                 if (serverConfigResultEntity != null && serverConfigResultEntity.data != null) {
                     if(serverConfigResultEntity.data.user != null) {
-                        CommonModel.getInstance().saveUserEntity(serverConfigResultEntity.data.user);
+                        UserModel.getInstance().saveUserEntity(serverConfigResultEntity.data.user);
                     }
                     go2HomePage();
                 }

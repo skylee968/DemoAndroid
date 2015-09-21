@@ -15,6 +15,7 @@ import studio.orange.mobile.reader.entityresult.UserResultEntity;
 import retrofit.Callback;
 
 public interface UserBookIF {
+	void saveUserEntity(UserEntity user);
 	void getUserInfo(RequestEntity request, Callback<UserResultEntity> callback);
 	UserEntity getUserAsync();
 

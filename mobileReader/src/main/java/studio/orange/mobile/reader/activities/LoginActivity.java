@@ -8,7 +8,12 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
+import com.google.gson.Gson;
+
 import studio.orange.mobile.reader.R;
+import studio.orange.mobile.reader.configs.Constants;
+import studio.orange.mobile.reader.entity.UserEntity;
+import studio.orange.mobile.reader.models.UserModel;
 import studio.orange.mobile.reader.socials.Auth;
 import studio.orange.mobile.reader.socials.FacebookAuth;
 import studio.orange.mobile.reader.socials.GoogleSocialAuth;
@@ -106,7 +111,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
                 break;
             case R.id.btn_login_facebook:
                 mSocialNetwork  = SocialProfile.FACEBOOK;
-                mGoogleAuth.login();
+                mFacebookAuth.login();
                 break;
             case R.id.btn_login_close:
                 mSocialNetwork  = SocialProfile.NONE;
@@ -120,6 +125,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     @Override
     public void onLoginSuccess(SocialProfile profile) {
+        Gson gson = new Gson();
+        Log.e("USER PROFILE", gson.toJson(profile));
         //save on shared preferences
         saveAuthenticatedUser(profile);
 
@@ -140,16 +147,23 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
     public void onRevoke() {}
 
     private void saveAuthenticatedUser(SocialProfile profile){
+        UserEntity user = new UserEntity();
+        user.setName(profile.getName());
+        user.setEmail(profile.getEmail());
+        user.setAvatar(profile.getImage());
 
-        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = sharedPreferences.edit();
+        Constants.mUserInfo = user;
+        UserModel.getInstance().saveUserEntity(user);
 
-        editor.putBoolean(USER_AUTHENTICATED, true);
-        editor.putString(USER_SOCIAL,   profile.getNetwork());
-        editor.putString(PROFILE_NAME,  profile.getName());
-        editor.putString(PROFILE_EMAIL, profile.getEmail());
-        editor.putString(PROFILE_IMAGE, profile.getImage());
-        editor.putString(PROFILE_COVER, profile.getCover());
-        editor.apply();
+//        SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
+//        SharedPreferences.Editor editor = sharedPreferences.edit();
+//
+//        editor.putBoolean(USER_AUTHENTICATED, true);
+//        editor.putString(USER_SOCIAL,   profile.getNetwork());
+//        editor.putString(PROFILE_NAME,  profile.getName());
+//        editor.putString(PROFILE_EMAIL, profile.getEmail());
+//        editor.putString(PROFILE_IMAGE, profile.getImage());
+//        editor.putString(PROFILE_COVER, profile.getCover());
+//        editor.apply();
     }
 }

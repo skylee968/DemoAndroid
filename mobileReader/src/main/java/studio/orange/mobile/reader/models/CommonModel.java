@@ -71,15 +71,15 @@ public class CommonModel extends BaseModel implements CommonIF {
 			}
 		});
 	}
-	@Override
-	public void saveUserEntity(UserEntity user) {
-		if (user == null) {
-			return;
-		}
-		Gson gs = new Gson();
-		String data = gs.toJson(user);
-		getStoreAdapter().put(DBConfig.CacheKey.USER_INFO_KEY, data);
-	}
+//	@Override
+//	public void saveUserEntity(UserEntity user) {
+//		if (user == null) {
+//			return;
+//		}
+//		Gson gs = new Gson();
+//		String data = gs.toJson(user);
+//		getStoreAdapter().put(DBConfig.CacheKey.USER_INFO_KEY, data);
+//	}
 	@Override
 	public void getServerConfig(RequestEntity request, final Callback<ServerConfigResultEntity> callback) {
 		if(request == null || callback == null) {

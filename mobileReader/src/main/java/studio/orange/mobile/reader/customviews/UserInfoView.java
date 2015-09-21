@@ -10,6 +10,8 @@ import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 import studio.orange.mobile.reader.R;
 import studio.orange.mobile.reader.entity.UserEntity;
 
@@ -85,6 +87,7 @@ public class UserInfoView extends RelativeLayout implements View.OnClickListener
         if(user != null) {
             mUserInfo   = user;
             mTxtUserName.setText(mUserInfo.getName() == null ? "" : mUserInfo.getName());
+            ImageLoader.getInstance().displayImage(user.getAvatar(), mImgAvatar);
             showUserInfoView(true);
         }
     }

@@ -130,13 +130,21 @@ public class UserModel extends BaseModel implements UserBookIF {
 			}
 		});
 	}
-
+	@Override
+	public void saveUserEntity(UserEntity user) {
+		if (user == null) {
+			return;
+		}
+		Gson gs = new Gson();
+		String data = gs.toJson(user);
+		getStoreAdapter().put(DBConfig.CacheKey.USER_INFO_KEY, data);
+	}
 	@Override
 	public UserEntity getUserAsync() {
 		String json = getStoreAdapter().get(DBConfig.CacheKey.USER_INFO_KEY);
-		if(json != null) {
-			Log.e("USER INFO:", json);
-		}
+//		if(json != null) {
+//			Log.e("USER INFO:", json);
+//		}
 		if(json != null && json.trim().length() > 1) {
 			return CommonUtils.deserializeStringToUserEntity(json);
 		}

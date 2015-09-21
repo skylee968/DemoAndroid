@@ -18,6 +18,7 @@ import studio.orange.mobile.reader.entity.RequestEntity;
 import studio.orange.mobile.reader.entity.ServerConfigEntity;
 import studio.orange.mobile.reader.entityresult.ServerConfigResultEntity;
 import studio.orange.mobile.reader.models.CommonModel;
+import studio.orange.mobile.reader.models.UserModel;
 import studio.orange.mobile.reader.notifications.GCMClientManager;
 import studio.orange.mobile.reader.uitls.CommonUtils;
 import studio.orange.mobile.reader.uitls.UserUtils;
@@ -177,7 +178,7 @@ public class SplashActivity extends BaseActivity implements View.OnClickListener
             public void success(ServerConfigResultEntity serverConfigResultEntity, Response response) {
                 if (serverConfigResultEntity != null && serverConfigResultEntity.data != null) {
                     if (serverConfigResultEntity.data.user != null) {
-                        CommonModel.getInstance().saveUserEntity(serverConfigResultEntity.data.user);
+                        UserModel.getInstance().saveUserEntity(serverConfigResultEntity.data.user);
                     }
                     showUpdateDialog(serverConfigResultEntity.data);
                 }

@@ -7,6 +7,7 @@ import studio.orange.mobile.reader.entityresult.CategoryResultEntity;
 import studio.orange.mobile.reader.entityresult.ServerConfigResultEntity;
 
 import retrofit.Callback;
+import studio.orange.mobile.reader.socials.SocialProfile;
 
 public interface CommonIF {
 
@@ -14,6 +15,6 @@ public interface CommonIF {
 	void getCategory(Callback<CategoryResultEntity> callback);
 
 	void getServerConfig(RequestEntity request, Callback<ServerConfigResultEntity> callback);
-	void saveUserEntity(UserEntity user);
+//	void saveUserEntity(UserEntity user);
 	void searchBookName(String bookName, Callback<BookResultEntity> callback);
 }

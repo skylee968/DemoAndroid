@@ -32,6 +32,7 @@ public class UserEntity {
 	@SerializedName("date_created")
 	private String dateCreated;
 
+	private String avatar;
 
 	private String deviceId;
 	public UserEntity(){
@@ -106,5 +107,13 @@ public class UserEntity {
 
 	public void setGender(boolean gender) {
 		this.gender = gender;
+	}
+
+	public String getAvatar() {
+		return avatar;
+	}
+
+	public void setAvatar(String avatar) {
+		this.avatar = avatar;
 	}
 }
