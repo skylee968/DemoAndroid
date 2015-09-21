@@ -8,7 +8,7 @@
 
     <fragment
         android:id="@+id/register_fragment"
-        class="com.onetech.mobilereader.fragments.RegisterFragment"
+        class="studio.orange.mobile.reader.fragments.RegisterFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_centerInParent="true"

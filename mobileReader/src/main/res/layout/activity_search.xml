@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <com.onetech.mobilereader.customviews.SearchBarView
+    <studio.orange.mobile.reader.customviews.SearchBarView
         android:id="@+id/search_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
@@ -22,7 +22,7 @@
             android:background="@color/white"
             android:choiceMode="singleChoice" />
 
-        <com.onetech.mobilereader.customviews.LoadingAndNotFoundView
+        <studio.orange.mobile.reader.customviews.LoadingAndNotFoundView
             android:id="@+id/search_loading_container"
             android:layout_width="match_parent"
             android:layout_height="match_parent"

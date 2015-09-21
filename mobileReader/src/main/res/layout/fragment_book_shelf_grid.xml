@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
 
-        <com.onetech.mobilereader.customviews.BookShelfView
+        <studio.orange.mobile.reader.customviews.BookShelfView
             android:id="@+id/gridview_book"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -22,7 +22,7 @@
             android:verticalSpacing="25dp"
             android:horizontalSpacing="5dp"
             shelves:shelfBackground="@drawable/grid_item_background_center">
-        </com.onetech.mobilereader.customviews.BookShelfView>
+        </studio.orange.mobile.reader.customviews.BookShelfView>
     </RelativeLayout>
 
 <!--</android.support.v4.widget.SwipeRefreshLayout>-->

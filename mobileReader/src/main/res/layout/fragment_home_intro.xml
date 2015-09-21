@@ -20,12 +20,12 @@
             android:layout_height="10dp"
             android:padding="10dip" />
 
-        <com.onetech.mobilereader.customviews.ProductHorizontalScrollView
+        <studio.orange.mobile.reader.customviews.ProductHorizontalScrollView
             android:id="@+id/horizontal_hot_books"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <com.onetech.mobilereader.customviews.ProductHorizontalScrollView
+        <studio.orange.mobile.reader.customviews.ProductHorizontalScrollView
             android:id="@+id/horizontal_news_books"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

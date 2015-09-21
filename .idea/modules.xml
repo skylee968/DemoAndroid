@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/DemoAndroid.iml" filepath="$PROJECT_DIR$/DemoAndroid.iml" />
       <module fileurl="file://$PROJECT_DIR$/colorPicker/colorPicker.iml" filepath="$PROJECT_DIR$/colorPicker/colorPicker.iml" />
-      <module fileurl="file://$PROJECT_DIR$/login_social_lib/login_social_lib.iml" filepath="$PROJECT_DIR$/login_social_lib/login_social_lib.iml" />
       <module fileurl="file://$PROJECT_DIR$/mobileReader/mobileReader.iml" filepath="$PROJECT_DIR$/mobileReader/mobileReader.iml" />
       <module fileurl="file://$PROJECT_DIR$/oTCore/oTCore.iml" filepath="$PROJECT_DIR$/oTCore/oTCore.iml" />
       <module fileurl="file://$PROJECT_DIR$/processButton/processButton.iml" filepath="$PROJECT_DIR$/processButton/processButton.iml" />

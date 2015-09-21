@@ -6,7 +6,7 @@
     android:background="@color/dark_gray"
     android:orientation="vertical">
 
-    <com.onetech.mobilereader.customviews.UserInfoView
+    <studio.orange.mobile.reader.customviews.UserInfoView
         android:id="@+id/user_info_container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
