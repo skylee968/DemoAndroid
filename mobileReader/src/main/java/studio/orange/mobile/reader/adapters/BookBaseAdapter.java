@@ -25,7 +25,7 @@ public class BookBaseAdapter extends OTBaseAdapter<BookEntity> {
         mListData = new ArrayList<BookEntity>();
         //initImageLoader();
     }
-    public void udpateData(List<BookEntity> listData) {
+    public void updateData(List<BookEntity> listData) {
         if(mListData == null) {
             mListData = new ArrayList<BookEntity>();
         }
