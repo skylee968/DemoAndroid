@@ -18,7 +18,7 @@ import studio.orange.mobile.reader.uitls.BookUtils;
 /**
  * Created by thienlm on 7/30/2015.
  */
-public abstract class BaseActivity extends FragmentActivity implements ActionBarView.ActionBarListner{
+public abstract class BaseActivity extends FragmentActivity implements ActionBarView.ActionBarListner {
     private FrameLayout mMainView;
     private ActionBarView mActionBar;
 
@@ -67,6 +67,12 @@ public abstract class BaseActivity extends FragmentActivity implements ActionBar
         Intent intent = new Intent(BaseActivity.this, SearchActivity.class);
         startActivity(intent);
     }
+
+    @Override
+    public void onTitleClicked() {
+
+    }
+
     public BookEntity getCurrnentBook() {
         return mCurrnentBook;
     }

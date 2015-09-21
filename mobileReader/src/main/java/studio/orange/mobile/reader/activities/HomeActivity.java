@@ -64,7 +64,7 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 		}
 	}
 	public void showSelectFileDialog(){
-		mDirectoryDialog=new DirectoryDialog(HomeActivity.this, mResultDirectory, null);
+		mDirectoryDialog = new DirectoryDialog(HomeActivity.this, mResultDirectory, null);
 	}
     @Override
     public void onNavigationDrawerItemSelected(int position) {
@@ -126,6 +126,12 @@ public class HomeActivity extends BaseActivity implements NavigationDrawerFragme
 
 	@Override
 	public void menuNavigationBarClicked() {
+		mNavigationDrawerFragment.toggleMenu();
+	}
+
+	@Override
+	public void onTitleClicked() {
+		super.onTitleClicked();
 		mNavigationDrawerFragment.toggleMenu();
 	}
 

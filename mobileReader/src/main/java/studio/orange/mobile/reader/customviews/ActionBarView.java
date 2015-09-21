@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import studio.orange.mobile.reader.R;
 
@@ -17,6 +18,7 @@ import studio.orange.mobile.reader.R;
 public class ActionBarView extends RelativeLayout implements View.OnClickListener {
     private Context mContext;
     private View mView;
+    private TextView mTxtTitle;
     private ImageView mBtnSearch;
     private ImageView mBtnNavigation;
 
@@ -43,8 +45,8 @@ public class ActionBarView extends RelativeLayout implements View.OnClickListene
 
     public interface ActionBarListner {
         void menuNavigationBarClicked();
-
         void menuSearchClicked();
+        void onTitleClicked();
     }
 
     private ActionBarListner mListener;
@@ -53,6 +55,7 @@ public class ActionBarView extends RelativeLayout implements View.OnClickListene
         mContext                = context;
         LayoutInflater inflater = (LayoutInflater) mContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         mView                   = inflater.inflate(R.layout.layout_action_bar, null);
+        mTxtTitle               = (TextView) mView.findViewById(R.id.appTitle);
         mBtnSearch              = (ImageView) mView.findViewById(R.id.btn_search);
         mBtnNavigation          = (ImageView) mView.findViewById(R.id.btn_navigation);
         this.addView(mView);
@@ -60,10 +63,13 @@ public class ActionBarView extends RelativeLayout implements View.OnClickListene
     }
 
     private void initListener() {
+        mTxtTitle.setOnClickListener(this);
         mBtnNavigation.setOnClickListener(this);
         mBtnSearch.setOnClickListener(this);
     }
-
+    public void setTitle(int resId) {
+        mTxtTitle.setText(resId);
+    }
     public void changeNaviIcon(int resIconId) {
         mBtnNavigation.setBackgroundResource(resIconId);
     }
@@ -84,6 +90,11 @@ public class ActionBarView extends RelativeLayout implements View.OnClickListene
             case R.id.btn_search:
                 if (mListener != null) {
                     mListener.menuSearchClicked();
+                }
+                break;
+            case R.id.appTitle:
+                if(mListener != null) {
+                    mListener.onTitleClicked();
                 }
                 break;
             default:

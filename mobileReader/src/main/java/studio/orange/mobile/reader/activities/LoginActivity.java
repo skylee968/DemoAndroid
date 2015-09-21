@@ -125,8 +125,8 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener,
 
     @Override
     public void onLoginSuccess(SocialProfile profile) {
-        Gson gson = new Gson();
-        Log.e("USER PROFILE", gson.toJson(profile));
+        //Gson gson = new Gson();
+        //Log.e("USER PROFILE", gson.toJson(profile));
         //save on shared preferences
         saveAuthenticatedUser(profile);
 

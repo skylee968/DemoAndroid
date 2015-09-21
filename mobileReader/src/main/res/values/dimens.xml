@@ -46,8 +46,8 @@
     <dimen name="menu_item_img_size_width">25dp</dimen>
     <dimen name="menu_item_img_size_height">25dp</dimen>
     <!-- user info-->
-    <dimen name="user_img_size_width">77dp</dimen>
-    <dimen name="user_img_size_height">77dp</dimen>
+    <dimen name="user_img_size_width">70dp</dimen>
+    <dimen name="user_img_size_height">70dp</dimen>
 
     <dimen name="user_info_layout_size_height">77dp</dimen>
 
