@@ -151,7 +151,7 @@
     <orderEntry type="library" exported="" name="facebook-android-sdk-4.5.0" level="project" />
     <orderEntry type="library" exported="" name="appcompat-v7-22.2.0" level="project" />
     <orderEntry type="library" exported="" name="play-services-maps-7.8.0" level="project" />
-    <orderEntry type="module" module-name="processButton" exported="" />
-    <orderEntry type="module" module-name="oTCore" exported="" />
+    <orderEntry type="module" module-name="MR__LIB_ProcessButton" exported="" />
+    <orderEntry type="module" module-name="MR__LIB_OrangeCore" exported="" />
   </component>
 </module>
